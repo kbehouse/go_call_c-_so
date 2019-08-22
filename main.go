@@ -1,7 +1,7 @@
 package main
 
 /*
-#cgo LDFLAGS: -L"${SRCDIR}/libs"
+#cgo LDFLAGS: -L"${SRCDIR}" -lmyso
 #include "wrap_point.hxx"
 */
 import "C"

@@ -1,3 +1,5 @@
 .vscode/
 exe
 libs/
+wrap_point.hxx
+libmyso.so

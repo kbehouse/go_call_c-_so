@@ -1,9 +1,20 @@
-rm -rf libs/
-mkdir libs/
-cd libs
+# build .so
+cd cpp/
+mkdir build/
+cd build/
 cmake ..
 make -j4
+cp libmyso.so ../../libmyso.so
 
-cd .. 
+# copy .hxx
+cd ../
+cp wrap_point.hxx ../
+
+# build go 
+cd ../
 go build -o exe
+
+
+# run 
+export LD_LIBRARY_PATH=.
 ./exe

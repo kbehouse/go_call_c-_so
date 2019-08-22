@@ -6,24 +6,39 @@ Modify From: https://github.com/draffensperger/go-interlang/tree/master/go_to_cx
 ## Build & Run
 
 ```
-sh ./exe
+sh build_and_run.sh
 ```
 
-### Build 
+### Build .so
 
 ```
-mkdir libs/
-cd libs
+cd cpp/
+mkdir build/
+cd build/
 cmake ..
-cd .. 
+make -j4
+cp libmyso.so ../../libmyso.so
+```
+
+### copy .hxx
+
+```
+cd ../
+cp wrap_point.hxx ../
+```
+
+### build go 
+```
+cd ../
 go build -o exe
 ```
 
 ### Run
-
 ```
+export LD_LIBRARY_PATH=.
 ./exe
 ```
+
 
 ## Note
 

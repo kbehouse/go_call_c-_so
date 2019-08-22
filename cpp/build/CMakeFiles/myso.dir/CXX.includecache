@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/iclab/go_hello/go_call_cxx_so/cpp/point.cxx
+point.hxx
+/home/iclab/go_hello/go_call_cxx_so/cpp/point.hxx
+math.h
+-
+iostream
+-
+
+/home/iclab/go_hello/go_call_cxx_so/cpp/point.hxx
+
+/home/iclab/go_hello/go_call_cxx_so/cpp/wrap_point.cxx
+wrap_point.hxx
+/home/iclab/go_hello/go_call_cxx_so/cpp/wrap_point.hxx
+point.hxx
+/home/iclab/go_hello/go_call_cxx_so/cpp/point.hxx
+
+/home/iclab/go_hello/go_call_cxx_so/cpp/wrap_point.hxx
+
